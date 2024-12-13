@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/technical-design-document/1-high-level-architecture/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//technical-design-document/1-high-level-architecture/</loc>
             <lastmod>2022-02-01T00:01:00.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/technical-design-document/2-eidas/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//technical-design-document/2-eidas/</loc>
             <lastmod>2022-02-01T00:01:00.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/technical-design-document/3-common-services/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//technical-design-document/3-common-services/</loc>
             <lastmod>2022-02-01T00:01:00.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/technical-design-document/4-1-edelivery/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//technical-design-document/4-1-edelivery/</loc>
             <lastmod>2022-02-01T00:01:00.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/technical-design-document/4-2-evidence-exchange/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//technical-design-document/4-2-evidence-exchange/</loc>
             <lastmod>2022-02-01T00:01:00.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/integration-api/0-integration-api/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//integration-api/0-integration-api/</loc>
             <lastmod>2022-02-01T00:01:01.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/integration-api/1-test-environment/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//integration-api/1-test-environment/</loc>
             <lastmod>2022-02-01T00:01:01.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/integration-api/2-evidence-requester/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//integration-api/2-evidence-requester/</loc>
             <lastmod>2022-02-01T00:01:01.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/integration-api/3-evidence-provider/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//integration-api/3-evidence-provider/</loc>
             <lastmod>2022-02-01T00:01:01.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//</loc>
             <lastmod>2024-09-12T18:17:06.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/cookie-policy/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//cookie-policy/</loc>
             <lastmod>2024-12-05T12:26:38.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/accessibility-statement/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//accessibility-statement/</loc>
             <lastmod>2024-12-05T12:27:04.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/privacy-statement/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//privacy-statement/</loc>
             <lastmod>2024-12-05T12:27:26.000Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/introduction/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//introduction/</loc>
             <lastmod>2024-12-12T11:51:21.095Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/technical-design-document/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//technical-design-document/</loc>
             <lastmod>2024-12-12T12:06:58.677Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/resources/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//resources/</loc>
             <lastmod>2024-12-12T16:51:08.475Z</lastmod>
         </url><url>
-            <loc>https://govcy-oots.github.io/oots-integration-guide//oots-integration-guide/building-blocks/</loc>
+            <loc>https://govcy-oots.github.io/oots-integration-guide//building-blocks/</loc>
             <lastmod>2024-12-13T07:15:01.890Z</lastmod>
         </url>
 </urlset>
