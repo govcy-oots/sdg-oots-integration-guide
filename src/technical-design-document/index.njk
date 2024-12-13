@@ -1,0 +1,26 @@
+---
+title: "Technical Specifications"
+order: 2
+tags : ['top_menu']
+showCategoryMenu : true
+---
+<p>The technical and operational specifications of the Once-Only Technical System, laid down in the Commission’s Implementing Regulation ((EU) 2022/1463) setting out the system, are complemented by detailed, non-binding technical design documents jointly prepared by the Commission and Member States.</p>
+
+<div class="govcy-container">
+    <div class="row">
+    {%- for pag in collections[category] -%}
+        {#- Checks for same locale -#}
+        {% if locale  == pag.data.locale -%}
+            {#- Checks if we want to show the index page -#}
+            {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category -%}
+                <div class="govcy-col-4 govcy-mb-3">
+                   <a class="app-card" href="{{ pag.url | url }}">
+                         <h3>{{ pag.data.title }}</h3>
+                        {% if pag.data.description %}<p class="flex-fill">{{ pag.data.description }}</p>{% endif %}
+                    </a>
+                </div>
+            {%- endif %}
+        {%- endif %}
+    {%- endfor -%}
+    </div>
+</div> 

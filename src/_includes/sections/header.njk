@@ -1,0 +1,70 @@
+<header class="govcy-header govcy-d-print-none{% if page.url == '/' %} govcy-mb-0{% endif %}" id="headerContainer">
+  <div class="govcy-header-main-area">
+    <div
+      class="govcy-container govcy-main-area-items govcy-justify-content-between"
+    >
+      <div class="govcy-navigation-container govcy-align-items-center">
+        <div class="govcy-service-container">
+          {# <a href="https://www.gov.cy" class="govcy-logo" title="{{ site.localization[locale].got_to_gov_cy }}"
+            ><img alt="gov.cy Logo"
+          /></a> #}
+          <span class="govcy-service-name">
+            <a href="{{'/' | url}}">{{ site.localization[locale].subtitle }}</a>
+          </span>
+        </div>
+        <ul class="govcy-menu-items">
+          <li class="govcy-mobile-menu govcy-mobile-menu-only govcy-dropdown govcy-ms-auto">
+            <span>
+                <a href="#" class="govcy-menu-item govcy-expand-btn">{{ site.localization[locale].menu }}</a>
+            </span>
+          </li>
+          <li class="govcy-global-search">
+            <span><a href="#" class="govcy-menu-item" aria-label="{{ site.localization[locale].search_button_aria_label }}" aria-haspopup="true"><i class="govcy-search-icon"></i></a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="govcy-header-menu-area">
+    <nav class="govcy-mainmenu">
+      <div class="govcy-container">
+          <ul class="govcy-menu-items">
+              {% if locale == 'en' %}
+                  {%- for cat in collections.categoriesSortByOrderAscEn -%}
+                  <li>
+                      <a href="{{ cat.url | url }}" class="govcy-menu-item{% if category == cat.data.category %} active{% endif %}">
+                          {{ cat.data.title }}
+                      </a>
+                  </li>
+                  {%- endfor -%}
+              {% elif locale == 'el' %}
+                  {%- for cat in collections.categoriesSortByOrderAscEl -%}
+                  <li>
+                      <a href="{{ cat.url | url }}" class="govcy-menu-item{% if category == cat.data.category %} active{% endif %}">
+                          {{ cat.data.title }}
+                      </a>
+                  </li>
+                  {%- endfor -%}
+              {% endif %}
+          </ul>
+      </div>
+    </nav>
+    <div class="govcy-header-search-area">
+        <div class="govcy-container">
+            <div class="govcy-form">
+                {# <div class="govcy-form-control">
+                    <label class="govcy-label" for="search">Search gov.cy</label>
+                    <input id="search" type="text" class="govcy-text-input" enterkeyhint="search">
+                    <button type="submit" class="govcy-btn-primary govcy-btn-search" aria-label="Search" aria-expanded="true">Search</button>
+                </div> #}
+                <div class="govcy-form-control">
+                    <span class="pagefind-custom-label">{{ site.localization[locale].search_placeholder }}</span>
+                    <link href="{{ '/pagefind/pagefind-ui.css' | url}}" rel="stylesheet">
+                    <div id="search-div" class="search"></div>
+                    <script src="{{ '/pagefind/pagefind-ui.js' | url}}" onload="new PagefindUI({ element: '#search-div', showImages: false, translations : {placeholder:''} }); document.querySelector('.pagefind-ui__search-input').setAttribute('aria-label', '{{ site.localization[locale].search_placeholder }}');"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</header>

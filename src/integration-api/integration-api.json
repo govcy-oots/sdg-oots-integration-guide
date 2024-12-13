@@ -1,0 +1,7 @@
+{
+    "layout" : "base.njk",
+    "category" : "integration-api",
+    "tags" : "integration-api",
+    "showCategoryMenu" : true,
+    "showIndexInCategoryMenu" : false
+  }

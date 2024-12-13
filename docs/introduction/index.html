@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+        <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Social -->
+        <meta property="og:description" content="Design your services using gov.cy styles, components and patterns.">
+        <meta property="og:title" content="Introduction - Integration guide for OOTS - gov.cy">
+        <meta property="og:url" content="https://govcy-oots.github.io/oots-integration-guide/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://govcy-oots.github.io/oots-integration-guide/img/icons-512.png">
+        <meta property="og:site_name" content="gov.cy">
+    
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://govcy-oots.github.io/oots-integration-guide/">
+        <meta property="twitter:title" content="Introduction - Integration guide for OOTS - gov.cy">
+        <meta property="twitter:description" content="Design your services using gov.cy styles, components and patterns.">
+        <meta property="twitter:image" content="https://govcy-oots.github.io/oots-integration-guide/img/icons-512.png">
+        <!-- Theme --> 
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#31576F">
+        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-57x57-precomposed.png">
+        <!-- Bootstrap CSS -->
+        <link href="/css/govcy.uds.min.css" rel="stylesheet" >
+        
+        <link href="/css/docs.css" rel="stylesheet" >
+        <!-- Prism Highlighter CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css" rel="stylesheet">
+        <title>Introduction - Integration guide for OOTS - gov.cy</title>
+        <meta name="description" content="Design your services using gov.cy styles, components and patterns.">
+    </head>
+    <body>
+        <section class="govcy-container-fluid" id="bodyStartContainer">
+        <a href="#mainContainer" class="govcy-skip-link">Skip to main content</a> 
+    </section>
+    <header class="govcy-header govcy-d-print-none" id="headerContainer">
+  <div class="govcy-header-main-area">
+    <div
+      class="govcy-container govcy-main-area-items govcy-justify-content-between"
+    >
+      <div class="govcy-navigation-container govcy-align-items-center">
+        <div class="govcy-service-container">
+          
+          <span class="govcy-service-name">
+            <a href="/">Integration guide for OOTS</a>
+          </span>
+        </div>
+        <ul class="govcy-menu-items">
+          <li class="govcy-mobile-menu govcy-mobile-menu-only govcy-dropdown govcy-ms-auto">
+            <span>
+                <a href="#" class="govcy-menu-item govcy-expand-btn">Menu</a>
+            </span>
+          </li>
+          <li class="govcy-global-search">
+            <span><a href="#" class="govcy-menu-item" aria-label="Search, expands search text box when clicked" aria-haspopup="true"><i class="govcy-search-icon"></i></a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="govcy-header-menu-area">
+    <nav class="govcy-mainmenu">
+      <div class="govcy-container">
+          <ul class="govcy-menu-items">
+              <li>
+                      <a href="/introduction/" class="govcy-menu-item active">
+                          Introduction
+                      </a>
+                  </li><li>
+                      <a href="/technical-design-document/" class="govcy-menu-item">
+                          Technical Specifications
+                      </a>
+                  </li><li>
+                      <a href="/integration-api/0-integration-api/" class="govcy-menu-item">
+                          Integration APIs
+                      </a>
+                  </li><li>
+                      <a href="/building-blocks/" class="govcy-menu-item">
+                          Building Blocks
+                      </a>
+                  </li><li>
+                      <a href="/resources/" class="govcy-menu-item">
+                          Resources
+                      </a>
+                  </li>
+          </ul>
+      </div>
+    </nav>
+    <div class="govcy-header-search-area">
+        <div class="govcy-container">
+            <div class="govcy-form">
+                
+                <div class="govcy-form-control">
+                    <span class="pagefind-custom-label">Search the site</span>
+                    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+                    <div id="search-div" class="search"></div>
+                    <script src="/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search-div', showImages: false, translations : {placeholder:''} }); document.querySelector('.pagefind-ui__search-input').setAttribute('aria-label', 'Search the site');"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</header>
+
+    
+<!--beforeMain-->
+    <section class="govcy-container" id="beforeMainContainer">
+        
+        
+        <div class="govcy-phase-banner">
+            <span class="govcy-tag">ver. 0.1.0</span>
+            <span class="govcy-ml-2"> </span>
+        </div>
+        
+    </section>
+
+    <!--Main-->
+    <main class="govcy-container" id="mainContainer">
+        <div class="govcy-row">
+            <div class="govcy-col-12 govcy-order-last-desk">
+                <h1 data-pagefind-weight="10">Introduction</h1>
+                
+                
+                    <aside class="toc-outter">
+                        <strong>On this page</strong>
+                        <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#single-digital-gateway-regulation-(sdgr)">Single Digital Gateway Regulation (SDGR)</a>
+            		</li>
+
+                    <li><a href="#definitions">Definitions</a>
+            		</li>
+
+                    <li><a href="#user-journey">User Journey</a>
+            
+                <ol>
+                    
+                    <li><a href="#evidence-exchange-with-preview">Evidence Exchange with Preview</a>
+            		</li>
+
+                    <li><a href="#user-journey-prototype-(ux)">User Journey Prototype (UX)</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#disclaimers">Disclaimers</a>
+            
+                <ol>
+                    
+                    <li><a href="#audit-logs">Audit Logs</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#reference-documents">Reference Documents</a>
+            		</li>
+                </ol>
+            </nav>
+                    </aside>
+                
+                <!-- # CY OOTS Integration Guide -->
+<!-- ## Introduction -->
+<h2 id="single-digital-gateway-regulation-(sdgr)" tabindex="-1">Single Digital Gateway Regulation (SDGR)</h2>
+<p>The <strong>Single Digital Gateway Regulation (SDGR)</strong> aims to digitize and simplify access to cross-border procedures across the European Union, thus helping citizens and businesses make the best of the Single Market. To implement this, the OOTS was conceptualized, to allow service providers to retrieve authenticated evidence about a user directly from the originating Member State. Consisting of multiple components (labelled as “building blocks”), this implementation of the OOTS seeks to largely abstract these building blocks behind a single Integration Layer, accessible via a REST API.</p>
+<p><strong>OOTS is the technical system for the cross-border automated exchange of evidence.</strong>  The CY SDG OOTS Integration components are intended to serve as an intermediary - for Evidence Requesters (Procedure Portals) and Evidence Providers - with core OOTS services. This design allows integrators to connect with OOTS much more seamlessly, by abstracting the Evidence Exchange flow into API calls.</p>
+<h2 id="definitions" tabindex="-1">Definitions</h2>
+<table class="govcy-table">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SDG</td>
+<td>Single Digital Gateway</td>
+<td>The regulation in which article 14 sets the requirement to establish a technical system for the automated exchange of evidence between competent authorities in different Member States</td>
+</tr>
+<tr>
+<td>OOTS</td>
+<td>Once Only Technical System</td>
+<td>The technical system for the cross-border automated exchange of evidence</td>
+</tr>
+<tr>
+<td>CA</td>
+<td>Competent authority</td>
+<td>Competent authority means any Member State authority or body established at national, regional or local level with specific responsibilities relating to the information, procedures, assistance and services covered by the SDGR</td>
+</tr>
+<tr>
+<td>TDD</td>
+<td>Technical Design Document</td>
+<td>The Technical Design Document describes and provides additional technical detail to the OOTS Implementing Act</td>
+</tr>
+<tr>
+<td>EP</td>
+<td>Evidence Provider</td>
+<td>The competent authority which is providing the evidence</td>
+</tr>
+<tr>
+<td>ER</td>
+<td>Evidence Requester</td>
+<td>A webpage or a mobile application where a user can access and complete an online procedure</td>
+</tr>
+<tr>
+<td>EB</td>
+<td>Evidence Broker</td>
+<td>The Evidence Broker is an authoritative system that maps specific data sets as evidence types that prove specific requirements</td>
+</tr>
+<tr>
+<td>DSD</td>
+<td>Data Services Directory</td>
+<td>The Data Service Directory is a common service that acts as a catalogue of evidence types that can be provided upon request</td>
+</tr>
+<tr>
+<td>SR</td>
+<td>Semantic Repository</td>
+<td>The Semantic Repository is a common service that acts as a data portal for the technical system</td>
+</tr>
+<tr>
+<td>AP</td>
+<td>Access Point</td>
+<td>The eDelivery Access Point implements a standardized message exchange protocol that ensures interoperable, secure and reliable data exchange</td>
+</tr>
+<tr>
+<td>AS4</td>
+<td>AS4 Profile</td>
+<td>The eDelivery AS4 Profile is a modular profile of the ebMS3 and AS4 OASIS specifications</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-journey" tabindex="-1">User Journey</h2>
+<!-- ![User Journey](img/user-journey.png) -->
+<p><a href="../img/user-journey.png"> <img src="../img/user-journey.png" alt="User Journey"> </a></p>
+<!-- ### User Journey -->
+<p>The 7 key steps in the once only journey are presented on the diagram above.  The key steps are the following:</p>
+<h3 id="evidence-exchange-with-preview" tabindex="-1">Evidence Exchange with Preview</h3>
+<ul>
+<li>Step 1: Authentication (eIDAS/CyLogin)</li>
+<li>Step 2: Locate evidence type and evidence provider (Common Services)</li>
+<li>Step 3: ER sends evidence request and EP responds with preview link</li>
+<li>Step 4: ER redirects user to Preview Space and sends second request</li>
+<li>Step 5: User previews evidence on EP’s Preview Space</li>
+<li>Step 6: User confirms the exchange and the EP send the response with the evidence to the ER</li>
+<li>Step 7: Submit the application in the ER’s procedure portal</li>
+</ul>
+<h3 id="user-journey-prototype-(ux)" tabindex="-1">User Journey Prototype (UX)</h3>
+<p>The user journey steps are demonstrated in the following figma prototypes:</p>
+<ul>
+<li><strong><a href="https://www.figma.com/proto/4SyUgc8mKqMBkyk96AFw2L/OOTS-user-journey?node-id=3406-6963&amp;viewport=437%2C273%2C0.02&amp;scaling=min-zoom&amp;starting-point-node-id=3406%3A6963&amp;show-proto-sidebar=1">Figma prototype 1</a></strong></li>
+<li><strong><a href="https://www.figma.com/proto/4SyUgc8mKqMBkyk96AFw2L/OOTS-user-journey?page-id=16164%3A35647&amp;node-id=9524-49289&amp;viewport=681%2C895%2C0.02&amp;t=30kRwBNTO5aJv3OP-1&amp;scaling=min-zoom&amp;starting-point-node-id=9524%3A49289">Figma prototype 2</a></strong></li>
+</ul>
+<h2 id="disclaimers" tabindex="-1">Disclaimers</h2>
+<p>This document outlines the procedure necessary for online services or evidence providers to integrate into the Cyprus Single Digital Gateway. Therefore, the target audiences are the development teams and project managers engaged by the ERs and EPs, and organizations that are required to build services within the context of Annex II of the Single Digital Gateway Regulation.</p>
+<h3 id="audit-logs" tabindex="-1">Audit Logs</h3>
+<p>It is the sole responsibility of the integrating party to maintain the logs and audit records of the electronic service, including logs of calls to the SDG Integration Layer. The integrating party shall not make reliance implicit or otherwise on any other logs.</p>
+<h2 id="reference-documents" tabindex="-1">Reference Documents</h2>
+<ul>
+<li><strong><a href="../tdd/(OOP)(Guidance)(v5.00).pdf">(OOP)(Guidance)(v5.00).pdf</a></strong></li>
+</ul>
+
+            </div>
+    
+    
+        </div>
+    </main>
+        <!-- Footer -->
+    <footer class="govcy-footer govcy-d-print-none"> 
+    <div class="govcy-px-4">
+        
+        <div class="govcy-container">
+            <div class="govcy-d-flex govcy-justify-content-between govcy-align-items-end govcy-flex-wrap">
+                <div class="govcy-my-4">
+                    <ul>
+                        <li><a href="/privacy-statement">Privacy statement</a></li>
+                        <li><a href="/cookie-policy">Cookies</a></li>
+                        <li><a href="/accessibility-statement">Accessibility</a></li>
+                    </ul>
+                    <div class="govcy-d-flex govcy-align-items-center govcy-flex-wrap">
+                        <span class="govcy-fs-2 govcy-fw-bold govcy-mr-6">gov.cy</span>
+                        <span class="govcy-mr-6 govcy-mt-2 govcy-mb-2">© Republic of Cyprus, 2025</span>
+                        
+                    </div>
+                </div>
+                <div class="govcy-my-4">
+                   <a href="https://www.gov.cy" class="govcy-footer-logo" title="Go to the GOV.CY homepage"><img alt="gov.cy Logo"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+            <script src="/js/govcy.uds.min.js" type="text/javascript"></script>
+        <script src="/js/uds.js" type="text/javascript"></script>
+    </body>
+</html>

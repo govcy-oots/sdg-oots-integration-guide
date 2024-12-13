@@ -1,0 +1,179 @@
+.example-box {
+    background-color: #F8F9FA;
+    border: 1px solid #dee2e6;
+    margin-top:10px; margin-bottom:10px ;
+}
+.example-box-inner {
+    border: 1px solid black;
+    margin-top:10px; margin-bottom:10px ;
+    padding-top:10px; padding-bottom:10px ;
+    background-color: #cfe2ff;
+}
+.example-box-outter {
+    border: 1px solid black;
+    margin-top:10px; margin-bottom:10px ;
+    padding-top:10px; padding-bottom:10px ;
+    background-color: #e2e8e1;
+}
+
+.w-100-px{width: 100px !important;}
+
+/** TOC */
+
+/* .toc {background-color: rgb(235,241,243);border: 1px solid #ddd;font-size: 1rem;}*/
+/* .toc-outter {border: 1px solid #ddd;font-size: 1rem;} */
+.toc-outter {font-size: 1rem;}
+.toc ol {list-style-type:disc ;}
+
+/** Bootsrap img-fluid */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/** app-side-link */
+.app-side-link {
+    padding-left: 0.5rem;
+    border-left: 4px solid transparent;
+    margin-bottom: 1.5rem;
+  }
+  .app-side-link a,
+  .app-side-link a:visited,
+  .app-side-link a:active,
+  .app-side-link a:hover {
+    color: #474545;
+    text-decoration: none;
+  }
+  .app-side-link.active {
+    border-left-color: #ffad2d !important;
+    color: #272525;
+    font-weight: 500;
+  }
+
+
+.app-card {
+    background-color: #EBF1F3;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #272525;
+    text-decoration: none!important;
+    /* font-weight: 500; */
+}
+.app-card:hover,
+.app-card:visited,
+.app-card:focus {
+    color: #272525;
+}
+.app-card:hover {
+    background-color: #DAE5EA;
+}
+
+/** pagefind search */
+:root {
+    --pagefind-ui-primary: #272525a;
+    --pagefind-ui-text: #272525;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #BBBCBF !important;
+    --pagefind-ui-tag: #eeeeee;
+    --pagefind-ui-border-width: 2px;
+    --pagefind-ui-border-radius: 5px;
+    --pagefind-ui-image-border-radius: 8px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: var(--bs-body-font-family) !important;
+    --pagefind-ui-scale: 1 !important;
+}
+
+.pagefind-ui__button{
+    width:auto !important;
+}
+
+.pagefind-ui__search-clear {
+    height: 35px !important;
+    /* font-size: 16px !important; */
+}
+
+.pagefind-ui__search-input{
+    height: 40px !important;
+}
+
+.pagefind-ui__form:before {
+    top: calc(11px* var(--pagefind-ui-scale)) !important;
+}
+
+.pagefind-ui__search-input::placeholder {
+    opacity: .4 !important;
+}
+
+.pagefind-ui__search-input {
+    height: 44px;
+    padding: 5px;
+    border: 2px solid #000000 !important;
+    border-radius: 0px !important;
+    font-size: calc(16px * var(--pagefind-ui-scale)) !important;
+    font-weight: normal !important;
+}
+.pagefind-ui__search-input:focus, .pagefind-ui__search-clear:focus, 
+.pagefind-ui__search-input:focus-visible, .pagefind-ui__search-clear.pagefind-ui__button:focus-visible {
+    border: 2px solid #000000 !important;
+    border-radius: 0px !important;
+    box-shadow: 0 0 0 4pt #ffdd00 !important;
+    outline: none;
+}
+
+.pagefind-ui__button{
+    font-size: calc(16px * var(--pagefind-ui-scale)) !important;
+    font-weight: normal !important;
+    border: 0px solid #000000 !important;
+    background-color: #31576f !important;
+    color: #fff !important;
+    border-radius: 6px !important;
+}
+
+.pagefind-ui__button-input:focus, .pagefind-ui__button:focus-visible  {
+    background-color: #fd0 !important;
+    border: 2px solid #000000 !important;
+    box-shadow: none !important;
+    color: #272525 !important;
+    outline-style: none;
+}
+
+.pagefind-ui__result.svelte-j9e30.svelte-j9e30 {
+    padding: calc(10px* var(--pagefind-ui-scale)) 0 calc(20px* var(--pagefind-ui-scale)) !important;
+}
+
+.pagefind-custom-label {
+    color: #272525;
+    display: block;
+    font-weight: 500;
+    margin-bottom: .75rem;
+}
+
+.below-header {
+    padding-top: 64px;
+}
+
+@media (max-width: 766px) {
+    .below-header {
+        padding-top: 44px;
+    }
+}
+
+.govcy-order-first-desk {
+    order: -1 !important;
+}
+
+.govcy-order-last-desk {
+    order: 6 !important;
+}
+
+@media (max-width: 766px) {
+    .govcy-order-first-desk {
+        order: 6 !important;
+    }
+    
+    .govcy-order-last-desk {
+        order: -1 !important;
+    }
+}

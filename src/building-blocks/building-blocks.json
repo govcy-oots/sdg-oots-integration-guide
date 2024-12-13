@@ -1,0 +1,7 @@
+{
+    "layout" : "base.njk",
+    "category" : "building-blocks",
+    "tags" : "building-blocks",
+    "showCategoryMenu" : true,
+    "showIndexInCategoryMenu" : false
+  }

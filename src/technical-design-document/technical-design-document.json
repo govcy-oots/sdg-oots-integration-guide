@@ -1,0 +1,7 @@
+{
+    "layout" : "base.njk",
+    "category" : "technical-design-document",
+    "tags" : "technical-design-document",
+    "showCategoryMenu" : true,
+    "showIndexInCategoryMenu" : false
+  }

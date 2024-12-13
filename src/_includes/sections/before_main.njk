@@ -1,0 +1,12 @@
+{% if showBeforeMain %}
+<!--beforeMain-->
+    <section class="govcy-container" id="beforeMainContainer">
+        {%if site.showDraft%}<span class="govcy-br-2 govcy-text-white govcy-br-danger govcy-rounded-1 govcy-bg-danger govcy-efs-small">&nbsp;{{ site.localization[locale].draft }}&nbsp;</span>{% endif %}
+        {%if site.showVersion%}
+        <div class="govcy-phase-banner">
+            <span class="govcy-tag">{{ site.localization[locale].version }} {{ site.version }}</span>
+            <span class="govcy-ml-2">{{ site.localization[locale].older_version_banner | safe }} </span>
+        </div>
+        {% endif %}
+    </section>
+{% endif %}

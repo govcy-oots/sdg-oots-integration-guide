@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="{{locale}}">
+    {% include 'sections/head.njk' %}
+    <body>
+    {% include 'sections/skip_to_main.njk' %}
+    {% include 'sections/header.njk' %}
+    {% include 'sections/before_main.njk' %}
+    <!--Main-->
+    <main class="govcy-container" id="mainContainer"{% if hideSearch %} data-pagefind-ignore{% endif %}>
+        <div class="govcy-row">
+            <div class="{% if showCategoryMenu %}govcy-col-md-9 govcy-col-lg-10{% else %}govcy-col-12{% endif %} govcy-order-last-desk">
+                {% if showTitle %}<h1 data-pagefind-weight="10">{{ title }}</h1>{% endif %}
+                {# Check if we want to show table of contents#}
+                {% if site.showTOC and content | toc %}
+                    <aside class="toc-outter">
+                        <strong>{{ site.localization[locale].TOC_title }}</strong>
+                        {{ content | toc | safe }}
+                    </aside>
+                {% endif %}
+                {{ content | safe }}
+            </div>
+    {# Check if showCategoryMenu is true, to change the layout to have 2 columns and add menu
+    This should be default in styles, components and patterns  #}
+    {% if showCategoryMenu -%}
+            <aside class="govcy-col-md-3 govcy-col-lg-2 govcy-order-first-desk">
+                <div class="govcy-d-md-none govcy-fw-bolder govcy-my-2">{{ site.localization[locale].side_title }}</div>
+                <ul class="govcy-list-unstyled">
+                {#- if showSubcategoriesInMenu the loop through `availableSubcategories` defined in folder.json -#}
+                {%- if showSubcategoriesInMenu %}
+                    {%- for subCat in availableSubcategories -%}
+                        {#- show the subcategory name -#}
+                        <li class="govcy-fw-bolder govcy-mb-3">{{ site.localization[locale][subCat] }}</li>
+                        {%- for pagSubCat in collections[subCat] -%}
+                            {#- Checks if we want to show the index page -#}
+                            {% if (pagSubCat.fileSlug == category and showIndexInCategoryMenu) or pagSubCat.fileSlug != category -%}
+                                <li class="app-side-link{% if page.url == pagSubCat.url %} active{% endif %}"><a href="{{ pagSubCat.url | url }}">{{ pagSubCat.data.title }}</a></li>
+                            {%- endif %}
+                        {%- endfor -%}
+                    {%- endfor -%}
+                {% else -%}
+                    {#- for all pages with tag = to `category`
+                        'category' should be set by default in styles, components and patterns
+                        corresponding tags should be set for every page in those folders except index.md -#}
+                    {%- for pag in collections[category] -%}
+                        {#- Checks for same locale -#}
+                        {% if locale  == pag.data.locale -%}
+                            {#- Checks if we want to show the index page -#}
+                            {% if (pag.fileSlug == category and showIndexInCategoryMenu) or pag.fileSlug != category -%}
+                                <li class="app-side-link{% if page.url == pag.url %} active{% endif %}"><a href="{{ pag.url | url }}">{{ pag.data.title }}</a></li>
+                            {%- endif %}
+                        {%- endif %}
+                    {%- endfor -%}
+                {%- endif %}
+                </ul>
+            </aside>
+    {%- endif %}
+        </div>
+    </main>
+    {% include 'sections/footer.njk' %}
+    {% include 'sections/js.njk' %}
+    </body>
+</html>

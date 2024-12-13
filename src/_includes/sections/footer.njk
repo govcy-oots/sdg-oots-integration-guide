@@ -1,0 +1,58 @@
+    <!-- Footer -->
+    <footer class="govcy-footer govcy-d-print-none"> 
+    <div class="govcy-px-4">
+        {# <div class="govcy-container">
+            <div class="govcy-row">
+                <div class="govcy-col-md-12 govcy-footer-column">
+                    <div class="govcy-row">
+                        <div class="govcy-col-md-4">
+                            <ul>
+                                <li><h3>Links</h3></li>
+                                <li><a href="{{ '/' | url }}">Home</a></li>
+                                <li><a href="{{ '/getting-started' | url }}">Get started</a></li>
+                                <li><a href="{{ site.github.homeUrl | safe }}" target="_blank">Github - Developer Assets</a></li>
+                                <li><a href="{{ site.github.dsWebsiteUrl | safe }}" target="_blank">Github - Design System website</a></li>
+                            </ul>
+                        </div>
+                        <div class="govcy-col-md-4">
+                            <ul>
+                                <li><h3>Tools and libraries</h3></li>
+                                <li><a href="{{ site.figmaLibrary.homeUrl | safe }}" target="_blank">Figma</a></li>
+                                <li><a href="{{ site.exalidraw.homeUrl | safe }}" target="_blank">Exalidraw</a></li>
+                                <li><a href="{{ site.npm.homeUrl | safe }}" target="_blank">npm</a></li>
+                            </ul>
+                        </div>
+                        <div class="govcy-col-md-4">
+                            <ul>
+                                <li><h3>Previous Versions</h3></li>
+                                {%- for ver in site.previousVersions -%}
+                                <li><a href="{{ ver.url }}" target="_blank">{{ ver.label}}</a></li>
+                                {%- endfor -%}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> #}
+        <div class="govcy-container">
+            <div class="govcy-d-flex govcy-justify-content-between govcy-align-items-end govcy-flex-wrap">
+                <div class="govcy-my-4">
+                    <ul>
+                        <li><a href="{{ '/privacy-statement' | url }}">{{ site.localization[locale].privacy_label }}</a></li>
+                        <li><a href="{{ '/cookie-policy' | url }}">{{ site.localization[locale].cookie_label }}</a></li>
+                        <li><a href="{{ '/accessibility-statement' | url }}">{{ site.localization[locale].accessibility_label }}</a></li>
+                    </ul>
+                    <div class="govcy-d-flex govcy-align-items-center govcy-flex-wrap">
+                        <span class="govcy-fs-2 govcy-fw-bold govcy-mr-6">gov.cy</span>
+                        <span class="govcy-mr-6 govcy-mt-2 govcy-mb-2">{{ site.localization[locale].copyright_label }}</span>
+                        {# <a href="https://europa.eu/" title="{{ site.localization[locale].funding_by_EY_link_title }}" target="_blank"><img class="govcy-eu-logo govcy-mb-2" src="{{ '/img/FundedbyEU_NextGeneration_H53-EN.png' | url }}" alt="{{ site.localization[locale].funding_by_EY }}"></a>
+                        <a href="http://www.cyprus-tomorrow.gov.cy/" title="{{ site.localization[locale].cyprus_tomorrow_link_title }}" target="_blank"><img class="govcy-eu-logo govcy-mb-2" src="{{ '/img/CYpros to aurio logo eng_H53_EN.png' | url }}" alt="{{ site.localization[locale].cyprus_tomorrow }}"></a> #}
+                    </div>
+                </div>
+                <div class="govcy-my-4">
+                   <a href="https://www.gov.cy" class="govcy-footer-logo" title="{{ site.localization[locale].got_to_gov_cy }}"><img alt="gov.cy Logo"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

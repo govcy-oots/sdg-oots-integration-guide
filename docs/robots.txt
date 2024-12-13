@@ -1,0 +1,4 @@
+Sitemap: https://govcy-oots.github.io/oots-integration-guide//sitemap.xml
+
+User-agent: *
+Disallow:

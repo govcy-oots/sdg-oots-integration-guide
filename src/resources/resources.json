@@ -1,0 +1,7 @@
+{
+    "layout" : "base.njk",
+    "category" : "resources",
+    "tags" : "resources",
+    "showCategoryMenu" : true,
+    "showIndexInCategoryMenu" : false
+  }
